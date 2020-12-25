@@ -17,7 +17,7 @@ public:
 	}
 	T top()
 	{
-		return S.Top();
+		return S.top();
 	}
 	void push(T data)
 	{

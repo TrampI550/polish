@@ -22,7 +22,7 @@ class List
 				Size--;
 			}
 		}
-		T Top()
+		T top()
 		{
 			if (head != nullptr)
 			{
@@ -137,6 +137,5 @@ class List
 			}
 		};
 		int Size;
-		T top;
 		Node<T>* head;
 };
