@@ -7,14 +7,14 @@ class Stack
 {
 public:
 
-Stack(double size=0)
+    Stack(double size=0)
 	{
 		size = MAX;
 		arr = new T[size];
 		Top = 0;
 	}
 
-~Stack()
+    ~Stack()
 	{
 		if (Top == -1)
 		{
