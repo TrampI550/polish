@@ -51,8 +51,9 @@ Stack(double size=0)
 
 	void pop()
 	{
-			Top--;
-			int var = arr[Top];
+		if (Top==-1)
+			throw underflow_error("Empty");
+		Top--;
 	}
 
 	T top()
