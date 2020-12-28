@@ -7,11 +7,7 @@ class List
 {
 	public:
 		int GetSize() { return Size; }
-		List()
-		{
-			Size = 0;
-			head = nullptr;
-		}
+		List() :Size(0), head(nullptr) {}
 		void pop_front()
 		{
 			if (head != nullptr)
@@ -82,6 +78,22 @@ class List
 				current = current->pNext;
 			}
 			for (int i = Size - 1; i > -1; i--)
+			{
+				std::cout << msi[i]->Data << std::endl;
+			}
+		}
+		void Print()
+		{
+			Node<T>** msi;
+			msi = new Node<T> * [Size];
+			Node<T>* current = this->head;
+			int counter = 0;
+			for (int i = 0; i < Size; i++)
+			{
+				msi[i] = current;
+				current = current->pNext;
+			}
+			for (int i = 0; i < Size; i++)
 			{
 				std::cout << msi[i]->Data << std::endl;
 			}

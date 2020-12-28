@@ -27,8 +27,8 @@ public:
 	{
 		S.pop_back();
 	}
-	void turn_over()
+	void Print()
 	{
-		S.turn_over();
+		S.Print();
 	}
 };
